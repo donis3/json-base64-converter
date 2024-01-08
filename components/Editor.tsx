@@ -70,7 +70,7 @@ export default function Editor(props: EditorProps) {
 			<CodeEditor
 				value={props.code}
 				language={props.lang ?? "json"}
-				placeholder={props.placeholder ?? "Paste your json object here"}
+				placeholder={props.placeholder ?? "Paste your data here"}
 				onChange={(e) => props.setCode(e.target.value)}
 				padding={15}
 				style={{

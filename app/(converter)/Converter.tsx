@@ -10,12 +10,12 @@ export default function Converter() {
 			<Tabs defaultValue="raw" className="">
 				<div className="w-full flex  justify-center p-4">
 					<TabsList className="">
-						<TabsTrigger value="raw">JSON to Base64</TabsTrigger>
+						<TabsTrigger value="raw">to Base64</TabsTrigger>
 						<span className="px-2">
 							<BsArrowLeftRight />
 						</span>
 						<TabsTrigger value="encoded">
-							Base64 to JSON
+							from Base64
 						</TabsTrigger>
 					</TabsList>
 				</div>

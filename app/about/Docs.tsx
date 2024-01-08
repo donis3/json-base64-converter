@@ -7,7 +7,7 @@ type DocsProps = {};
 
 export default async function Docs({}: DocsProps) {
 	return (
-		<div className="flex flex-col gap-4 text-primary dark:bg-black/20 px-4 py-4 rounded-md">
+		<div className="flex flex-col gap-8 text-primary dark:bg-black/20 px-4 py-4 rounded-md">
 			<div>
 				<h1 className="flex flex-row gap-2 text-3xl mb-10 items-center justify-center">
 					<FaCode /> Documentation

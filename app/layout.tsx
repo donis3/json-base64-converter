@@ -4,9 +4,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-	title: "Converter for JSON - Base64 ",
+	title: "B64 Converter - Convert data to base64 and back",
 	description:
-		"Easily convert json data to base64 string to easily store as an environment variable. ",
+		"A tool to convert your data and json objects to base64 strings and vice versa. Easily store json in environment variables.  ",
 };
 
 export default function RootLayout({
@@ -18,9 +18,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body className="flex flex-col justify-between  pt-[var(--nav-height)]">
 				<Navbar />
-				<main className="flex-1">
-					{children}
-				</main>
+				<main className="flex-1">{children}</main>
 				<Footer />
 			</body>
 		</html>

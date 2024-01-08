@@ -54,7 +54,7 @@ export default function FromJson({}: FromJsonProps) {
 					...prev,
 					message: {
 						hasError: true,
-						text: "Your input failed to parse as valid json and converted to string without being parsed.",
+						text: "Your data is not a valid JSON and  was successfully encoded to base64 as a string",
 					},
 				}));
 				jsonString = JSON.stringify(data);

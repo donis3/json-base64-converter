@@ -55,7 +55,7 @@ export default function FromBase64() {
 						...prev,
 						message: {
 							hasError: true,
-							text: "Your encoded string is decoded and returned as a string because it's not valid JSON",
+							text: "Your encoded data is decoded and returned as a string because it's not valid JSON",
 						},
 					}));
 				}
