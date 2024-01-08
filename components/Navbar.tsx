@@ -24,7 +24,7 @@ export default function Navbar() {
 				</h2>
 				<div className="flex items-center  font-medium gap-1 ">
 					<NavLink href="/">Home</NavLink>
-					<NavLink href="/test">About</NavLink>
+					<NavLink href="/about">Documentation</NavLink>
 				</div>
 			</div>
 		</nav>
