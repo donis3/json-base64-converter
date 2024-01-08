@@ -1,6 +1,6 @@
 import Editor from "@/components/Editor";
 import Link from "next/link";
-import Converter from "./Converter";
+import Converter from "./(converter)/Converter";
 
 export default function Home() {
 	return (

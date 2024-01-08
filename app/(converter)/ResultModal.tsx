@@ -1,12 +1,10 @@
 "use client";
-import { useEffect, useState } from "react";
 import {
 	Dialog,
 	DialogContent,
 	DialogDescription,
 	DialogHeader,
 	DialogTitle,
-	DialogTrigger,
 } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 
@@ -19,13 +17,12 @@ type ResultProps = {
 	error?: string;
 };
 
-export default function Result({
+export default function ResultModal({
 	children,
 	title,
 	message,
 	open,
 	setOpen,
-	error,
 }: ResultProps) {
 	return (
 		<Dialog modal open={open} onOpenChange={setOpen}>
