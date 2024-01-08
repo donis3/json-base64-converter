@@ -6,7 +6,7 @@ export default function Footer() {
 	return (
 		<footer className="w-full bg-black/20 text-accent-foreground flex justify-center">
 			<div className="container w-full px-2 py-3 flex justify-between items-center">
-				<div className="font-medium text-sm">
+				<div className="font-medium text-sm flex flex-row gap-1 items-center">
 					&copy;2024{" "}
 					<Link
 						href={process.env.NEXT_PUBLIC_DEV_URL}
@@ -15,9 +15,6 @@ export default function Footer() {
 						{" "}
 						Deniz Özkan
 					</Link>
-				</div>
-
-				<div className="flex flex-row gap-1 items-center">
 					<Link
 						href={process.env.NEXT_PUBLIC_GITHUB_URL}
 						target="_blank"
@@ -30,6 +27,9 @@ export default function Footer() {
 						className="p-1 hover:text-blue-800">
 						<BsTwitterX />
 					</Link>
+				</div>
+
+				<div className="">
 					<ThemeSelect />
 				</div>
 			</div>

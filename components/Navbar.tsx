@@ -2,7 +2,11 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Button } from "./ui/button";
 
+/**
+ * Fixed navbar 
+ */
 export default function Navbar() {
 	return (
 		<nav
@@ -18,7 +22,7 @@ export default function Navbar() {
 						B64-Converter
 					</Link>
 				</h2>
-				<div className="flex items-center  font-medium ">
+				<div className="flex items-center  font-medium gap-1 ">
 					<NavLink href="/">Home</NavLink>
 					<NavLink href="/test">About</NavLink>
 				</div>
@@ -27,6 +31,12 @@ export default function Navbar() {
 	);
 }
 
+
+/**
+ * Path aware nav links
+ * @param param0 
+ * @returns 
+ */
 function NavLink({
 	href,
 	children,
@@ -37,13 +47,15 @@ function NavLink({
 	const path = usePathname();
 
 	return (
-		<Link
-			href={href}
+		<Button
+			asChild
+			variant={"link"}
+			size={"sm"}
 			className={cn(
 				"px-2 py-1 hover:bg-white/10 focus:bg-white/30  rounded-md text-white",
 				path === href && "font-bold underline",
 			)}>
-			{children}
-		</Link>
+			<Link href={href}>{children}</Link>
+		</Button>
 	);
 }

@@ -73,7 +73,7 @@
 		@apply border-border;
 	}
 	body {
-		@apply bg-gradient-to-br from-rose-100 to-teal-100 dark:from-blue-950  dark:to-violet-950  ;
+		@apply bg-gradient-to-br from-rose-100 to-teal-100 dark:from-blue-950  dark:to-violet-950 ;
     
 		min-height: 100vh;
 		min-height: 100dvh;

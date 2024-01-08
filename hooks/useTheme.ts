@@ -4,6 +4,9 @@ import { AppTheme } from "@/lib/types";
 import { useEffect, useLayoutEffect, useState } from "react";
 import useStoredState from "./useStoredState";
 
+/**
+ * Handles theme listening and selecting. Only use once in the app. Preferably in a context provider.
+ */
 export default function useTheme() {
 	const [theme, setTheme] = useStoredState<AppTheme>("system", "theme");
 	const [systemTheme, setSystemTheme] = useState<"dark" | "light">("light");
@@ -17,9 +20,11 @@ export default function useTheme() {
 		if (newAppTheme === "dark") {
 			document.documentElement.classList.toggle("dark", true);
 			document.documentElement.setAttribute("data-theme", "dark");
+			document.documentElement.setAttribute("data-color-mode", "dark"); //This attribute is for the editor plugin.
 		} else {
 			document.documentElement.classList.toggle("dark", false);
 			document.documentElement.removeAttribute("data-theme");
+			document.documentElement.removeAttribute("data-color-mode");
 		}
 	}, [theme, systemTheme]);
 
