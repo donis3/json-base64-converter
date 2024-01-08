@@ -73,11 +73,13 @@ export default function Editor(props: EditorProps) {
 				placeholder={props.placeholder ?? "Paste your data here"}
 				onChange={(e) => props.setCode(e.target.value)}
 				padding={15}
+				autoCapitalize={undefined}
 				style={{
 					fontFamily:
 						"ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace",
 					borderRadius: "0.5rem",
 					fontSize: "1rem",
+					minHeight: "8rem"
 				}}
 			/>
 		</div>

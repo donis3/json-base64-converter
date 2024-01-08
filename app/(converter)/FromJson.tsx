@@ -162,6 +162,7 @@ export default function FromJson({}: FromJsonProps) {
 					defaultValue={result}
 					spellCheck={false}
 					autoFocus={false}
+					
 					className="whitespace-normal resize-none overflow-y-auto text-zinc-600 font-mono text-base"
 					rows={5}
 				/>

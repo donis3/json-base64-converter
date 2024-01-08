@@ -20,7 +20,7 @@ export default function Navbar() {
 					<Link
 						href="/"
 						className="font-extrabold text-2xl tracking-tight text-white opacity-90">
-						<Logo className="fill-white dark:fill-fuchsia-700 h-auto w-fit min-h-10 max-w-48" />
+						<Logo className="fill-white dark:fill-fuchsia-700 h-auto min-h-10 max-w-48 w-auto" />
 					</Link>
 				</h2>
 				<div className="flex-1 flex items-center justify-end  font-medium gap-1 ">
