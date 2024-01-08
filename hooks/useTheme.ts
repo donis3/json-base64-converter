@@ -19,9 +19,11 @@ export default function useTheme() {
 
 		if (newAppTheme === "dark") {
 			document.documentElement.classList.toggle("dark", true);
+			document.documentElement.style.backgroundColor = "#09090b";
 			document.documentElement.setAttribute("data-theme", "dark");
 			document.documentElement.setAttribute("data-color-mode", "dark"); //This attribute is for the editor plugin.
 		} else {
+			document.documentElement.style.backgroundColor = "#4c0519";
 			document.documentElement.classList.toggle("dark", false);
 			document.documentElement.removeAttribute("data-theme");
 			document.documentElement.removeAttribute("data-color-mode");

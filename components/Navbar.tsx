@@ -19,8 +19,8 @@ export default function Navbar() {
 				<h2 className=" transition-transform duration-100 active:translate-y-0.5 ">
 					<Link
 						href="/"
-						className="font-extrabold text-2xl tracking-tight text-white opacity-90 ">
-						<Logo className="fill-white dark:fill-fuchsia-700 w-auto min-h-10 h-fit" />
+						className="font-extrabold text-2xl tracking-tight text-white opacity-90">
+						<Logo className="fill-white dark:fill-fuchsia-700 h-auto w-fit min-h-10 max-w-48" />
 					</Link>
 				</h2>
 				<div className="flex-1 flex items-center justify-end  font-medium gap-1 ">
